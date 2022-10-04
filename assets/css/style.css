@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Splash&display=swap');
+
+
+body {
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+}
+
+
+.navbar.navbar-expand-lg.bg-light {
+ position: fixed;
+width: 100%;
+z-index: 999999;
+
+}
+.main {
+ display: flex;
+}
+
+.shop {    
+ display: flex;
+justify-content: center;
+margin: 50px 0px 50px 0px;
+}
+
+.line hr{
+  width: 200px;
+}
+
+
+.shop h2  {
+ font-family: 'Dancing Script', cursive;
+}
+
+
+.submenu {
+    position: relative;
+    list-style-type: none;
+    width: 50%;
+}
+.submenu #cart{
+    display: none;
+  }
+  .submenu:hover #cart{
+    display: block;
+    position: absolute;
+    right:0;
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+  }
+
+  /* PRODUCTS */
+
+/* #section-cart {
+  position: absolute;
+top: 0;
+z-index: 99999999;
+right: 0;
+margin-top: 12px;
+
+margin-right: 41px;
+} */
+
+#cart-bank {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid bisque;
+  padding: 5px;
+  margin: 0 auto;
+  width: 134px;
+  color: burlywood;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.delete {
+  text-decoration: none;
+font-size: 21px;
+color: red;
+}
+
+#productsList  {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+
+.card {
+  flex: 0 0 auto;
+  width: 250px !important;
+  height: 450px;
+  margin-right: 40px;
+  border: none;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body h5 {
+  font-family: 'Montserrat', sans-serif;
+
+color: lightslategray;
+}
+.card-body p {
+  font-family: 'Montserrat', sans-serif;
+  color: burlywood;
+
+}
+td {
+  font-family: 'Montserrat', sans-serif;
+}
+.image-btn a{
+  font-family: 'Montserrat', sans-serif;
+}
+.image-btn{
+  position: relative;
+  
+  height: 350px;
+  overflow: hidden;
+}
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 0px;
+  text-transform: capitalize;
+  border: 3px solid bisque;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  text-decoration: none;
+  color: burlywood;
+  font-weight: bold;
+
+  
+}
+
+.image-btn:hover .card-btn {
+  opacity: 1;
+
+}
+
+.card-btn:hover {
+  background: rgb(234, 162, 73);
+  color: #fff;
+}
+
+
+
+.arrow {
+  width:37px;
+  opacity: 0.5;
+}
+
+
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+  position: absolute;
+  margin-top: -145px;
+}
+
+.pre-btn {
+  left: 0;
+ 
+}
+.pre-btn :hover , .nxt-btn :hover {
+  opacity: 1;
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+
+main img {
+
+  width: 100%;
+  position: relative;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(255, 255, 255, .8);
+ 
+}
+main button:hover{
+  background-color: lightgray;
+}
+/**/
+.trend {
+  width: 515px;
+  height: 525px;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-trend {
+  margin-top:103px;
+}
+
+.trend .main-content {
+  width: 100%;
+  height: 100%;
+  margin:5px;
+}
+.trend .main-content img {
+  width: 100%;
+  height: 100%;
+}
+.trend .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #080808;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  transition: 0.6s;
+  top: 0%;
+  left: 100%;
+  opacity: 0.8;
+}
+.trend:hover .overlay {
+  transform: translateX(-100%);
+}
+.trend .overlay p {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.75rem;
+}
+.trend .overlay p span {
+  display: block;
+  letter-spacing: normal;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 1.25rem;
+}
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-trend > div:nth-child(1) , body > div.container-scroller > div.follow > h2 {
+  display: flex;
+justify-content: center;
+margin-bottom: 32px;
+  font-family: 'Dancing Script', cursive;
+}
+ .cart {
+    margin: 5px;
+  }
+ 
+  .container-scroller {
+    margin-top:85px;
+  }
+footer {
+  margin-top:37px;
+}
+footer >p {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 531px) {
+ 
+  .cart img {
+    width: 100%;
+}
+main button {
+  position: absolute;
+  
+  display: flex;
+  margin-left: 37%;
+  margin-top: -7px;
+  border: none;
+}
+table {
+  width:200px;
+}
+
+}
+@media (min-width:532px)
+{
+
+  .scroller {
+  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 45px;
+  }
+  .cart img{
+    width: 350px;
+  }
+  main button {
+    position: absolute;
+    display: flex;
+    left: 50%;
+
+    padding: 8px 40px;
+    border: none;
+    margin-top: -203px;
+    margin-left: -93px;
+}
+table {
+  width: 370px;;
+}
+}
+
+@media (min-width:1047px){
+  .scroller {
+  
+    display: flex;
+    justify-content: center;
+  }
+  .cart img{
+    width: 350px;
+  }
+  main button {
+    position: absolute;
+    
+    display: flex;
+    left: 50%;
+    top: 70%;
+    padding: 8px 40px;
+    border: none;
+  }
+  table {
+    width:500px;
+  }
+}
